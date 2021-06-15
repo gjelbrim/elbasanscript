@@ -14,6 +14,7 @@ function convert() {
 }
 
 function transliterate(word) {
+  word = word.toLowerCase();
   const charCodes = {
     //three letter keys
     ngj:  '\u{10514}\u{1050B}',
