@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'albanian';
+    src: url(/fonts/Albanian-Ka2e.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+p#out{
+    font-family: albanian;
+}
+
+p{
+    font-size: 30px;
+}
