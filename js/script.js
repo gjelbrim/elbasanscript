@@ -24,5 +24,5 @@ function transliterate(word){
   };
   return word.split('').map(function (char) { 
     return l[char] || char; 
-  }).join("");
+  }).join('');
 }
