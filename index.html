@@ -16,9 +16,11 @@
 
 </head>
 <body>
-    <label for="text">text in latin letters:</label> <br>
-    <input type="text" id="text" size="20" oninput="convert()">
-    <!-- <button type="submit" onclick="convert()">submit</button> -->
+    <div class="form-group">
+        <input type="text" class="form-group-input input-xlarge" id="text" oninput="convert()">
+        <button class="form-group-btn">clear</button>
+    </div>
+
     <p id="out"></p>
 </body>
 </html>
