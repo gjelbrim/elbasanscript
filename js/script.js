@@ -1,4 +1,7 @@
-
+function clear() {
+  console.log("test")
+  document.getElementById('text').value = ''
+}
 
 function convert() {
     var input = document.getElementById("text").value;
