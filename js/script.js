@@ -9,7 +9,7 @@ function copyToClipboard() {
 }
 
 function convert() {
-    var input = document.getElementById("text").value;
+    var input = document.getElementById("latin").value;
     var output = document.getElementById("out");
     output.innerHTML = transliterate(input);
 }

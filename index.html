@@ -15,10 +15,13 @@
 </head>
 <body>
     <div class="form__group field">
-      <input type="text" name="text" id="text" class="form__field" placeholder="Text in Latin Letters" oninput="convert()">
-      <label for="text" class="form__label">Text in Latin Letters</label>
+      <input type="text" name="latin" id="latin" class="form__field" placeholder="Text in Latin Letters" oninput="convert()">
+      <label for="latin" class="form__label">Text in Latin Letters</label>
     </div><br>
-    <span id="out"></span><button onclick="copyToClipboard()">copy</button>
+    <div class="ouput">
+    <span class="out-elem" id="out"></span>
+    <button class="btn fa fa-clone out-elem" onclick="copyToClipboard()"></button>
+    </div>
     
 </body>
 </html>
