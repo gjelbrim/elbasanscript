@@ -1,17 +1,17 @@
-const clearText = () => {
-  const name = document.querySelector("#name");
-  name.value = "";
-  name.focus();
-};
+function copyToClipboard() {
+  var copyText = document.getElementById("out")
+  var textArea = document.createElement("textarea");
+  textArea.value = copyText.textContent;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  textArea.remove();
+}
 
 function convert() {
     var input = document.getElementById("text").value;
     var output = document.getElementById("out");
-
-    // output.innerHTML = input;
-      output.innerHTML = transliterate(input);
-    //toElbasan(input);
-
+    output.innerHTML = transliterate(input);
 }
 
 function transliterate(word) {
