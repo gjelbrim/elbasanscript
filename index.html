@@ -6,16 +6,19 @@
     <!-- script -->
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 <body>
-    <div class="form-group">
-        <input type="text" id="text" oninput="convert()">
-        <button onclick="clear()">clear</button>
-    </div>
-
-    <p id="out"></p>
+    <div class="form__group field">
+      <input type="text" name="text" id="text" class="form__field" placeholder="Text in Latin Letters" oninput="convert()">
+      <label for="text" class="form__label">Text in Latin Letters</label>
+    </div><br>
+    <span id="out"></span>
+    
 </body>
 </html>

@@ -1,7 +1,8 @@
-function clear() {
-  console.log("test")
-  document.getElementById('text').value = ''
-}
+const clearText = () => {
+  const name = document.querySelector("#name");
+  name.value = "";
+  name.focus();
+};
 
 function convert() {
     var input = document.getElementById("text").value;
