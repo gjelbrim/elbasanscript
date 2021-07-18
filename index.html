@@ -2,17 +2,23 @@
 <html lang="en">
 
 <head>
+
   <title>elbasanscri.pt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f14668"/>
+
   <!-- script -->
   <script src="js/script.js"></script>
+
   <!-- font awseome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
-  <!-- stylesheet -->
+
+  <!-- stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="/css/style.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-20JQ5ZV0F9"></script>
   <script>
@@ -26,11 +32,23 @@
     gtag('config', 'G-20JQ5ZV0F9');
   </script>
 
+  <!-- github button -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- manifest -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
 
 </head>
 
 <body>
+
+  <script>
+    if ('serviceWorker' in navigator){
+      navigator.serviceWorker.register('/service-worker.js')
+    }
+  </script>
+
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href=#>
@@ -38,6 +56,7 @@
       </a>
     </div>
   </nav>
+
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
@@ -62,7 +81,6 @@
         </div>
       </div>
     </div>
-
   </section>
 
 
