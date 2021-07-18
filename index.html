@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
+
 <body>
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href=#>
-        <span class="navtitel">elbasandcri.pt</span>
+        <span class="navtitel">elbasanscri.pt</span>
       </a>
     </div>
   </nav> 
@@ -26,13 +27,17 @@
       <div class="columns is-centered">
         <div class="column is-half">
           
-          <label for="inp" class="inp">
-            <input class="input is-large is-danger"type="text" name="latin" id="inp" placeholder="Text in Latin" oninput="convert()">
-            <span id="out"></span>
-            <button class="fa fa-clone" onclick="copyToClipboard()"></button>
-          </label>
-      
-          <div class="ouput">
+            <input class="input is-large is-danger" type="text" name="latin" id="inp" placeholder="Text in Latin" oninput="convert()">
+
+
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input class="input is-large is-danger" type="text" name="elbasan" id="out" value="" readonly>
+          </div>
+          <div class="control">
+            <a onclick="copyToClipboard()" class="button is-large is-danger">
+              <i class="fa fa-clone"></i>
+            </a>
           </div>
         </div>
 
