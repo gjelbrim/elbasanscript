@@ -1,11 +1,9 @@
 function copyToClipboard() {
-  var copyText = document.getElementById("out")
-  var textArea = document.createElement("textarea");
-  textArea.value = copyText.textContent;
-  document.body.appendChild(textArea);
-  textArea.select();
+  var copyText = document.getElementById("out");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  textArea.remove();
+
 }
 
 function convert() {
