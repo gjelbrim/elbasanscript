@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>elbasanscri.pt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- script -->
-    <script src="js/script.js"></script>
-    <!-- font awseome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <title>elbasanscri.pt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- script -->
+  <script src="js/script.js"></script>
+  <!-- font awseome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-20JQ5ZV0F9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-20JQ5ZV0F9');
@@ -32,31 +37,32 @@
         <span class="navtitel">elbasanscri.pt</span>
       </a>
     </div>
-  </nav> 
+  </nav>
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-half">
-          
-            <input class="input is-large is-danger" type="text" name="latin" id="inp" placeholder="Text in Latin" oninput="convert()">
+
+          <input class="input is-large is-danger" type="text" name="latin" id="inp" placeholder="Text in Latin"
+            oninput="convert()">
 
 
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <input class="input is-large is-danger" type="text" name="elbasan" id="out" value="" readonly>
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input is-large is-danger" type="text" name="elbasan" id="out" readonly>
+            </div>
+            <div class="control">
+              <button onclick="copyToClipboard()" class="button is-large is-danger">
+                <i class="fa fa-clone"></i>
+              </button>
+            </div>
           </div>
-          <div class="control">
-            <a onclick="copyToClipboard()" class="button is-large is-danger">
-              <i class="fa fa-clone"></i>
-            </a>
-          </div>
+
+
         </div>
-        
-        
-      </div>
       </div>
     </div>
-    
+
   </section>
 
 
@@ -64,23 +70,32 @@
     <div class="container">
       <div class="box columns is-centered">
         <div class="column">
-            <a href="https://www.buymeacoffee.com/gjelbrim"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=gjelbrim&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
+          <a href="https://www.buymeacoffee.com/gjelbrim"><img
+              src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=gjelbrim&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
         </div>
 
         <div class="column">
-  <a class="github-button" href="https://github.com/gjelbrim" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size="large" data-show-count="true" aria-label="Follow @gjelbrim on   GitHub">Follow @gjelbrim</a> <br>
+          <a class="github-button" href="https://github.com/gjelbrim"
+            data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size="large"
+            data-show-count="true" aria-label="Follow @gjelbrim on   GitHub">Follow @gjelbrim</a> <br>
 
-  
-<a class="github-button" href="https://github.com/gjelbrim/elbasanscript" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star gjelbrim/elbasanscript on GitHub">Star this project</a>
+
+          <a class="github-button" href="https://github.com/gjelbrim/elbasanscript"
+            data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;"
+            data-icon="octicon-star" data-size="large" data-show-count="true"
+            aria-label="Star gjelbrim/elbasanscript on GitHub">Star this project</a>
         </div>
 
         <div class="column is-half">
-          <p> Background by <a href="https://twitter.com/LirimKap">Lirim K.</a> (<a href="https://twitter.com/Albpattern">Albanian Patterns</a>)</p><br> More info about the Elbasan script on <a href="https://en.wikipedia.org/wiki/Elbasan_script">wikipedia</a>.
+          <p> Background by <a href="https://twitter.com/LirimKap">Lirim K.</a> (<a
+              href="https://twitter.com/Albpattern">Albanian Patterns</a>)</p><br> More info about the Elbasan script on
+          <a href="https://en.wikipedia.org/wiki/Elbasan_script">wikipedia</a>.
         </div>
       </div>
     </div>
   </section>
-    
-    
+
+
 </body>
+
 </html>
