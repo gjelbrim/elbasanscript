@@ -10,12 +10,14 @@ function copyToClipboard() {
 
 function toElbasan(){
   flipped = false;
-  document.getElementById("out").placeholder = "Text in Latin";
+  document.getElementById("inp").placeholder = "Text in Latin";
+  document.getElementById("toLatin").checked = false;
 }
 
 function toLatin(){
   flipped = true;
   document.getElementById("inp").placeholder = "Text in Elbasan (𐔇𐔐𐔁𐔀𐔛𐔀𐔓)";
+  document.getElementById("toElbasan").checked = false;
 }
 
 function convert() {

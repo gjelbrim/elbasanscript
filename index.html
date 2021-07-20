@@ -62,6 +62,17 @@
       <div class="columns is-centered">
         <div class="column is-half">
 
+          <div class="control box">
+            <label class="radio">
+              <input type="radio" id="toElbasan" onclick="toElbasan()" checked>
+              Latin>Elbasan
+            </label>
+            <label class="radio">
+              <input type="radio" id="toLatin" onclick="toLatin()">
+              Elbasan>Latin
+            </label>
+          
+
           <input class="input is-large is-danger" type="text" name="from" id="inp" placeholder="Text in Latin"
             oninput="convert()">
 
@@ -76,6 +87,7 @@
               </button>
             </div>
           </div>
+        </div>
 
 
         </div>
