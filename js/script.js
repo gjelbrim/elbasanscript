@@ -47,7 +47,7 @@ function transliterate(word) {
     zh: '\u{10524}',
     gh: '\u{10525}',
     kh: '\u{10527}',
-    xh: '\u{10502}',
+    xh: '\u{10503}',
     //single letter keys
     a: '\u{10500}',
     b: '\u{10501}',
