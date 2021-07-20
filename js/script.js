@@ -12,16 +12,20 @@ function toElbasan(){
   flipped = false;
   document.getElementById("inp").placeholder = "Text in Latin";
   document.getElementById("toLatin").checked = false;
+  document.getElementById("inp").value = "";
+  document.getElementById("out").value = "";
 }
 
 function toLatin(){
   flipped = true;
   document.getElementById("inp").placeholder = "Text in Elbasan (𐔇𐔐𐔁𐔀𐔛𐔀𐔓)";
   document.getElementById("toElbasan").checked = false;
+  document.getElementById("inp").value = "";
+  document.getElementById("out").value = "";
 }
 
 function convert() {
-  document.getElementById("out").setAttribute('value', transliterate(document.getElementById("inp").value));
+  document.getElementById("out").value = transliterate(document.getElementById("inp").value);
 }
 
 
