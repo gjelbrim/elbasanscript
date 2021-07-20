@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@font-face {
+    font-family: 'Noto';
+    src: url(/fonts/NotoSansElbasan-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Albanian';
+    src: url(/fonts/Albanian-Ka2e.ttf);
+}
+
 html{
     background-image: url(/img/background.jpeg);
+}
+
+input{
+    font-family: sans-serif, 'Noto', 'Albanian';
 }
 
 .navtitel{
