@@ -1,3 +1,5 @@
+var flipped = false;
+
 function copyToClipboard() {
   var copyText = document.getElementById("out");
   copyText.select();
@@ -6,9 +8,20 @@ function copyToClipboard() {
 
 }
 
+function toElbasan(){
+  flipped = false;
+  document.getElementById("out").placeholder = "Text in Latin";
+}
+
+function toLatin(){
+  flipped = true;
+  document.getElementById("inp").placeholder = "Text in Elbasan (𐔇𐔐𐔁𐔀𐔛𐔀𐔓)";
+}
+
 function convert() {
   document.getElementById("out").setAttribute('value', transliterate(document.getElementById("inp").value));
 }
+
 
 function transliterate(word) {
   word = word.toLowerCase();
@@ -59,8 +72,7 @@ function transliterate(word) {
     z: '\u{10523}'
   };
 
-  // todo: boolean to switch
-  //  charCodes = objectFlip(charCodes);
+  if(flipped) charCodes = objectFlip(charCodes);
 
   const pattern = new RegExp(
     Object.keys(charCodes).join('|'),
