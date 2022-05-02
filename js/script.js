@@ -98,3 +98,15 @@ function objectFlip(obj) {
     return ret;
   }, {});
 }
+
+var firstTitle = false;
+
+function changeTitle(){
+  document.title = firstTitle ? "🇦🇱 𐔇𐔐𐔁𐔀𐔛𐔀𐔓𐔛𐔂𐔙𐔍𐔗𐔝": "elbasanscri.pt 🇦🇱";
+  firstTitle = !firstTitle;
+  setTimeout(arguments.callee, 2500);
+}
+
+window.onload = function() {
+  changeTitle();
+}
