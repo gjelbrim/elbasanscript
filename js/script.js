@@ -5,7 +5,12 @@ function copyToClipboard() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
-
+  document.getElementById("copy").className = "";
+  document.getElementById("copy").innerHTML = "🇦🇱"
+  setTimeout(() => {
+    document.getElementById("copy").className = "fa fa-clone";
+    document.getElementById("copy").innerHTML = ""
+  }, 1000)
 }
 
 function toElbasan(){
