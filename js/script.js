@@ -10,13 +10,6 @@ function copyToClipboard() {
       document.getElementById("copy").innerHTML = ""
     }, 1000)
   }
-
-  function objectFlip(obj) {
-    return Object.keys(obj).reduce((ret, key) => {
-      ret[obj[key]] = key;
-      return ret;
-    }, {});
-  }
   
   var firstTitle = false;
   
